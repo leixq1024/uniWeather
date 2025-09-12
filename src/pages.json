@@ -1,15 +1,30 @@
 {
   "pages": [
+    // {
+    //   "path": "pages/startupPage",
+    //   "style": {
+    //     "navigationBarTitleText": "欢迎使用"
+    //   }
+    // },
     {
-      "path": "pages/startupPage",
+      "path": "pages/guidedPage",
       "style": {
-        "navigationBarTitleText": "欢迎使用"
+        "navigationBarTitleText": "引导页"
       }
     }
   ],
+  "easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "天气app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   }
